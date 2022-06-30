@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" color-mode="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today</title>
+    <link rel="stylesheet" href="toDo.css">
+</head>
+<body  id="dark-mode">
+    <h1>Get $h!t done!</h1>
+    <p id="current_date" type="date"></p>
+    <div class="container">
+        <div class="toggle">
+        <label class="switch">
+        <input type="checkbox"onclick="dark()" checked>
+        <span class="slider round">&nbsp;&nbsp;&#9728; &nbsp; &#9790;&nbsp;&nbsp;</span> 
+        </label>
+    </div>
+        <div class="title"> <h1>Today I will ...</h1> </div>
+<br>
+        <div  class="tasks" id="newTask">
+            
+        <input class="new"  id="tasks" type="text" placeholder=" Task to be completed..."> 
+        <button   id="addToDo" >+</button><br> 
+    </div>
+    <div class="added">
+        <ul required>
+            <!--tasks show here-->
+        </ul>
+    </div>
+</div>
+    <script src="toDo.js"></script>
+</body>
+</html>
